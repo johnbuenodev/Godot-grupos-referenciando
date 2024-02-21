@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4r6ej4yq26m5"]
+
+[ext_resource type="Script" path="res://level.gd" id="1_cub1h"]
+[ext_resource type="Texture2D" uid="uid://d0hvdqcmogkox" path="res://icon.svg" id="2_s7oub"]
+
+[node name="level" type="Node2D"]
+script = ExtResource("1_cub1h")
+
+[node name="warrior" type="Sprite2D" parent="." groups=["player"]]
+position = Vector2(405, 312)
+texture = ExtResource("2_s7oub")
+
+[node name="Texture" type="Sprite2D" parent="warrior"]
+
+[node name="mage" type="Sprite2D" parent="." groups=["player"]]
+
+[node name="archer" type="Sprite2D" parent="." groups=["player"]]
+
+[node name="goblin" type="Sprite2D" parent="." groups=["enemy"]]
